@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ============================================================================
-# Hermes Pterodactyl Skill — Interactive Setup Wizard
+# Pterodactyl Skill — Interactive Setup Wizard
 # ============================================================================
 import os
 import json
@@ -23,7 +23,7 @@ BOLD = '\033[1m'
 def print_banner():
     print(f"{CYAN}")
     print("  ╔═══════════════════════════════════════════════╗")
-    print("  ║     🦖 Hermes — Pterodactyl Setup Wizard     ║")
+    print("  ║        🦖 Pterodactyl Setup Wizard          ║")
     print("  ╚═══════════════════════════════════════════════╝")
     print(f"{NC}")
 
@@ -168,7 +168,7 @@ def main():
     print(GREEN + "╚═══════════════════════════════════════════════╝" + NC + "\n")
     print(f"Configuration saved to: {CYAN}{CONFIG_FILE}{NC}")
     print(f"Permissions set to:     {CYAN}600 (owner read/write only){NC}\n")
-    print(f"{BOLD}Hermes is ready to manage your Pterodactyl Panel! 🦖{NC}")
+    print(f"{BOLD}The AI agent is ready to manage your Pterodactyl Panel! 🦖{NC}")
 
 if __name__ == "__main__":
     try:

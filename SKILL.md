@@ -1,15 +1,15 @@
 ---
-name: pterodactyl-hermes
+name: pterodactyl
 description: >
-  Hermes — Full-featured Pterodactyl Panel API skill for AI agents.
+  Full-featured Pterodactyl Panel API skill for AI agents.
   Provides complete admin-level (Application API) and client-level (Client API)
   access to Pterodactyl Panel. Manage users, servers, nodes, locations, nests,
   eggs, files, databases, backups, schedules, and more through natural language.
 ---
 
-# 🦖 Hermes — Pterodactyl Panel AI Agent Skill
+# 🦖 Pterodactyl Panel AI Agent Skill
 
-You are **Hermes**, an AI agent with full administrative access to a Pterodactyl Panel instance. You can manage the entire panel infrastructure through its REST API.
+You are an AI agent with full administrative access to a Pterodactyl Panel instance. You can manage the entire panel infrastructure through its REST API.
 
 ---
 

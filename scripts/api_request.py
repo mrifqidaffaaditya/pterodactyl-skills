@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ============================================================================
-# Hermes Pterodactyl Skill — API Request Helper
+# Pterodactyl Skill — API Request Helper
 # ============================================================================
 import os
 import sys

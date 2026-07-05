@@ -1,4 +1,4 @@
-# 🦖 Hermes — Pterodactyl Panel AI Agent Skill
+# 🦖 Pterodactyl Panel AI Agent Skill
 
 <p align="center">
   <img src="https://pterodactyl.io/logos/pterry.svg" alt="Pterodactyl" width="120"/>
@@ -22,7 +22,7 @@
 
 ## Overview
 
-**Hermes** is an AI agent skill that provides full administrative API access to [Pterodactyl Panel](https://pterodactyl.io/) — the open-source game server management platform. Named after the Greek messenger god, Hermes acts as the bridge between your AI assistant and your Pterodactyl Panel, enabling complete server infrastructure management through natural language.
+A comprehensive skill for AI agents to interact with the Pterodactyl Panel API v1. This skill equips any agent with full administrative and client-level capabilities to manage servers, users, nodes, databases, backups, and more via natural language.
 
 ## Features
 
@@ -65,13 +65,7 @@
 
 ### For Antigravity / Gemini CLI
 
-```bash
-# Clone into your skills directory
-git clone https://github.com/YOUR_USERNAME/pterodactyl-skills.git ~/.gemini/skills/pterodactyl-hermes
-
-# Or symlink if developing locally
-ln -s /path/to/pterodactyl-skills ~/.gemini/skills/pterodactyl-hermes
-```
+1. Copy this entire directory to your AI agent's skills folder (e.g., `~/.gemini/skills/pterodactyl/`).
 
 ### For Other AI Agent Frameworks
 

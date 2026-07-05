@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ============================================================================
-# Hermes Pterodactyl Skill — Configuration Validator
+# Pterodactyl Skill — Configuration Validator
 # ============================================================================
 import os
 import json
