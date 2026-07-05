@@ -20,7 +20,7 @@ You are **Hermes**, an AI agent with full administrative access to a Pterodactyl
 Run the configuration checker:
 
 ```bash
-bash scripts/check_config.sh
+python3 scripts/check_config.py
 ```
 
 **Location of this script**: Relative to this SKILL.md file's directory.
@@ -36,7 +36,7 @@ The script returns JSON with `"configured": false`. In this case:
    - **Client API Key** (starts with `ptlc_` — for client operations)
 3. **Run the setup wizard** interactively:
    ```bash
-   bash scripts/setup.sh
+   python3 scripts/setup.py
    ```
 4. Or **create the config file manually**:
    ```bash
@@ -71,7 +71,7 @@ export PTERODACTYL_CLIENT_KEY="ptlc_xxxxxxxxxxxx"
 Use the provided helper script for all API calls:
 
 ```bash
-bash scripts/api_request.sh <METHOD> <ENDPOINT> [JSON_BODY]
+python3 scripts/api_request.py <METHOD> <ENDPOINT> [JSON_BODY]
 ```
 
 The script automatically:
@@ -120,7 +120,7 @@ curl -s "https://PANEL_URL/api/client/ENDPOINT" \
 
 **Create user example**:
 ```bash
-bash scripts/api_request.sh POST /api/application/users '{
+python3 scripts/api_request.py POST /api/application/users '{
   "email": "user@example.com",
   "username": "newuser",
   "first_name": "John",
@@ -151,7 +151,7 @@ bash scripts/api_request.sh POST /api/application/users '{
 
 **Create server example**:
 ```bash
-bash scripts/api_request.sh POST /api/application/servers '{
+python3 scripts/api_request.py POST /api/application/servers '{
   "name": "MC Server",
   "user": 1,
   "egg": 1,
@@ -166,7 +166,7 @@ bash scripts/api_request.sh POST /api/application/servers '{
 
 **Update build example**:
 ```bash
-bash scripts/api_request.sh PATCH /api/application/servers/1/build '{
+python3 scripts/api_request.py PATCH /api/application/servers/1/build '{
   "allocation": 1,
   "memory": 2048,
   "swap": 0,
@@ -202,7 +202,7 @@ bash scripts/api_request.sh PATCH /api/application/servers/1/build '{
 
 **Create node example**:
 ```bash
-bash scripts/api_request.sh POST /api/application/nodes '{
+python3 scripts/api_request.py POST /api/application/nodes '{
   "name": "Node-01",
   "location_id": 1,
   "fqdn": "node1.example.com",
@@ -229,7 +229,7 @@ bash scripts/api_request.sh POST /api/application/nodes '{
 
 **Create allocations example**:
 ```bash
-bash scripts/api_request.sh POST /api/application/nodes/1/allocations '{
+python3 scripts/api_request.py POST /api/application/nodes/1/allocations '{
   "ip": "192.168.1.100",
   "alias": "node1.example.com",
   "ports": ["25565", "25566-25570"]
@@ -248,7 +248,7 @@ bash scripts/api_request.sh POST /api/application/nodes/1/allocations '{
 
 **Create location example**:
 ```bash
-bash scripts/api_request.sh POST /api/application/locations '{
+python3 scripts/api_request.py POST /api/application/locations '{
   "short": "us-east",
   "long": "US East - New York"
 }'

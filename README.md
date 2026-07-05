@@ -143,9 +143,9 @@ pterodactyl-skills/
 ├── LICENSE                     # MIT License
 ├── .gitignore                  # Git ignore rules
 ├── scripts/
-│   ├── setup.sh                # Interactive setup wizard
-│   ├── check_config.sh         # Configuration validator
-│   └── api_request.sh          # Core API request helper
+│   ├── setup.py                # Interactive setup wizard
+│   ├── check_config.py         # Configuration validator
+│   └── api_request.py          # Core API request helper
 └── references/
     └── api_endpoints.md        # Complete API endpoint reference
 ```
