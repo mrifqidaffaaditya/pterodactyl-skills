@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Credentials - NEVER commit real keys
+.pterodactyl/
+config.json
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temp files
+tmp/
+.tmp/
